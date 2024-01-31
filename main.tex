@@ -78,16 +78,23 @@
   As the abstract is not part of the text it should be complete in itself; no table numbers, figure numbers, references or displayed mathematical expressions should be included.
   It should be suitable for direct inclusion in abstracting services and should not normally exceed 200 words.
   The abstract should generally be restricted to a single paragraph.
-  Since contemporary information-retrieval systems rely heavily on the content of titles and abstracts to identify relevant articles in literature searches, great care should be taken in constructing both~\cite{edp2023matexlatextemplate}.
+  Since contemporary information-retrieval systems rely heavily on the content of titles and abstracts to identify relevant articles in literature searches, great care should be taken in constructing both (from EDP Science's MATEC Web of Science LaTeX template).
 
-  For extample, the goal of this template is to produce electronic output to be uploaded to Skemman that can be later printed out and bound into a professional looking textbook that fits on standard library shelves.
+  Beal's ``From Prototype to Paper in Six Easy Steps'' suggests answering these questions: What is the problem and who/what does it affect?
+  What is the general approach to fixing it?  (What have others done?)
+  What was your strategy to improve the situation?
+  What were your specific accomplishments?
+  Your succes/failure is confirmed by quantitative results?
+
+    For extample, the goal of this template is to produce electronic output to be uploaded to Skemman that can be later printed out and bound into a professional looking textbook that fits on standard library shelves.
   It is important to note that A4 paper when bound requires taller shelf spacing, so the B5 paper format was chosen instead.
   When binding a book, the edges that face outward need to be very smooth to reduce contamination and dust from entering the book when it sits on a shelf; this is why traditionally a larger paper size is cut down to the book size.
   If your print house expects the stock to be A4, then make sure the rubook has the ``a4paper'' option.
   If they prefer to deal with preparation themselves from a B5 pdf, then the default ``b5paper'' option is correct.
   The template is optimized for lualatex, but should still work with pdflatex.
-    If you switch to Icelandic mode (IS option to ruthesis) then abstract will become \'{U}tdr\'{a}ttur
-
+  (If you switch to Icelandic mode (IS option to ruthesis) then abstract will become \'{U}tdr\'{a}ttur)
+  Thesis have been printed out in December 2023 that were successfully bound into B5 books by local printers.
+  
   Keywords:  Keywords, separated, by, commas
 \end{abstract}
 
@@ -100,37 +107,40 @@ So long, and thanks for all the fish.
 
 This work was funded by \the\year~RANNIS grant ``Survey of man-eating Minke whales'' 1415550.
 Additional equipment was generously donated by the Icelandic Tourism Board.
+Just kidding!
 
 {\em Acknowledgements are important to acknowledge any people, funding, and companies that helped in the work in any significant way.\/}
 %\/ is italic correction at the end of \em and italics
 \clearpage{}
 
-\mainmatter{}
+\mainmatter{}%% switch to the main content of the docuemnt
 
-% Don't put page numbers on the chapter changes
-
-%% If you would like to separate chapters into different files, use
-%% \include{chapterfile}
-%% WARNING: Make sure that all of these files (and any new ones)
-%% are UTF-8 otherwise you will get weird encoding errors.
+%% If you would like to separate chapters into different files, use \include{chapterfile}
+%% It starts a new page to separate the files
 \include{instructions}%% comment this out once you start putting in your own text
-\include{introduction}%include{} starts a new page
+\include{introduction}
 \include{design}
-%\include{}
+\include{analysis}
+\include{conclusion}
+
 \printbibliography{}
 
 %% If appendices are needed, uncomment the following line
 %% and include the appendices in separate files
 \appendix{}%%RUM: "Appendicies (as appropriate)
-\input{code} % as an example, perhaps some of your code
 
-%\backmatter{} % Sections after this don't get numbers
+
+%% \input{} does not start a new chapter but puts the content of the file here
+\input{code} % as an example, relevant and important code
+% Generally you don't need all of the code:  put it into a repository
+
+\backmatter{} % Sections after this don't get numbers
 %% We prefer that all elements be numbered
 
 %%%%%%%%%%%%% SHOW INDEX %%%%%%%%%%%%%%%%%%
 %% Index, optional.  A good idea on longer documents
-\clearforchapter{}
-\printindex{}%%RUM: Not mentioned
+%\clearforchapter{}
+%\printindex{}%%RUM: Not mentioned
 
 \end{document}
 %%% Local Variables:
