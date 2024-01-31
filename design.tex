@@ -1,0 +1,63 @@
+\chapter{Design\label{cha:design}}
+Explain your design process.
+Hint:  you will be employing elements from the textbook for Product Design and Development~\cite{ulrich2020product-design-development} and Axiomatic Design~\cite{suh2021des}.
+Give a one-page explanation of how the processes works assuming the reader isn't familiar with them but has an engineering education.
+
+
+\section{Requirements}
+You now have a list of customer needs and benchmark metrics from competitors.
+State assumptions, boundary Conditions, and/or constraints
+
+\textbf{The rest of this section uses elements from Kristján Gerhard's MSc Thesis~\cite{gerhard2016suretrack}.
+Please remember to replace the citations and information for your paper.}
+It is time to map the relevant customer needs into Functional Requirements based upon what you learned from the benchmark chart.
+
+As usual, start with a top-level to encapsulate your general strategy of needed functionality and the implementation:
+The critical functionality for solving the problem is  \FR0: ``Contain \SI{25}{\kilogram} of fish on SureTrack conveyor until release is triggered''
+Our tactic to implement this functionality is \DP0: Gable-reinforced stainless-steel locking bin with bi-directional discharge
+\cite{gerhard2016suretrack}.
+
+
+\section{Implementation}
+Now decompose these functions further to generate Table~\ref{tab:first_level-frdp}.:
+\begin{table}
+  \center
+  \caption{First level FR-DP mapping.~\cite{gerhard2016suretrack}}\label{tab:first_level-frdp}
+  \begin{tabular}{lll} \toprule
+    ID& Functional Requirement & Design Parameter \\ \midrule 
+    1&Contain product&Main weldment\\
+    2&Move product&Support system\\
+    3&Discharge product &Discharge system\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Design Decomposition diagram goes here and explanation of what the arrows tell us.
+
+From this diagram, chunk pieces together to make modules.
+Explain what those modules are and what they do.
+
+Put Incidental Interaction graph and related discussion
+
+\section{\FR1 do something interesting}
+For each requirement, explain with calculations and data how the related DP will meet the requirement..
+This means each FR needs to have an associated test or tests (which will be checked in the Analysis chapter) and each DP needs to have a target metric which should be quantitative.
+Put equations, data, sketches, drawings, CAD, and electrical schematics.
+
+\section{\FR2 do something else}
+For each requirement, explain with calculations and data how the related DP will meet the requirement..
+This means each FR needs to have an associated test or tests (which will be checked in the Analysis chapter) and each DP needs to have a target metric which should be quantitative.
+Put equations, data, sketches, drawings, CAD, and electrical schematics.
+
+
+\section{\FR3 do something different}F
+For each requirement, explain with calculations and data how the related DP will meet the requirement..
+This means each FR needs to have an associated test or tests (which will be checked in the Analysis chapter) and each DP needs to have a target metric which should be quantitative.
+Put equations, data, sketches, drawings, CAD, and electrical schematics.
+
+\section{Summary}
+Summarize the chapter and place a schematic of how all the modules fit together.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:
