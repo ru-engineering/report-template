@@ -115,6 +115,18 @@ Just kidding!
 
 \mainmatter{}%% switch to the main content of the docuemnt
 
+%% Helpful macros you use in all of the files are best defined early
+%% or you can put them in custom.sty
+
+%% Axiomatic Design formulas
+%% Typeset the Axiomatic symbols properly
+\newcommand\CN[1]{\ensuremath{\text{CN}_{#1}}}%Customer Need
+\newcommand\FR[1]{\ensuremath{\text{FR}_{#1}}}%Functional Requirement
+\newcommand\DP[1]{\ensuremath{\text{DP}_{#1}}}%Design Parameter
+\newcommand\PV[1]{\ensuremath{\text{PV}_{#1}}}%Process Variable
+\newcommand\CON[1]{\ensuremath{\text{CON}_{#1}}}%Constraint
+
+
 %% If you would like to separate chapters into different files, use \include{chapterfile}
 %% It starts a new page to separate the files
 \include{instructions}%% comment this out once you start putting in your own text
