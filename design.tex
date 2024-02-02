@@ -17,9 +17,33 @@ The critical functionality for solving the problem is  \FR0: ``Contain \SI{25}{\
 Our tactic to implement this functionality is \DP0: Gable-reinforced stainless-steel locking bin with bi-directional discharge
 \cite{gerhard2016suretrack}.
 
+\section{Concepts}\label{sec:concepts}
+With these requirements in mind, we go back into creative mode and try to develop some possible concepts that might meet these requirements.
+\subsection{Concept 1: Time traveling robot}\label{sec:concept-1}
+Describe the concept.  How does it meet the Functional Requirements?
+
+Concept:  terminator robot able to travel through time portal
+\begin{description}
+  \item[\DP1]  Robot arm with claw
+  \item[\DP2] Gorobi solver
+  \item[\DP3]  3D print material with viscoscity of XX
+\end{description}
+
+Include a design decomposition (showing coupling) for each concept.
+\subsection{Concept 2}\label{sec:concept-2}
+
+\subsection{Concept 3}\label{sec:concept-3}
+\subsection{Concept 4}\label{sec:concept-4}
+
+\subsection{Analysis}
+Based upon the Product Design methods:  matrix method (Exhibit 8-5) and concept-scoring matrix (Exhibit 8-7)~\cite{ulrich2020product-design-development} which concept is most promising.
+
+Based upon the Axiomatic Design/CSD method:  Independence Axiom:  what is the coupling for each concept?  (uncoupled, path-dependent, or coupled).  Information Axiom:  How reliably can each concept meet the requirements it is given?  (does it require special preparation, high levels of maintenance, or may fail often?)
+
+Looking at both of these methods, explain which concept will be investigated further.
 
 \section{Implementation}
-Now decompose these functions further to generate Table~\ref{tab:first_level-frdp}.:
+With this concept in mind refine the implementation to generate Table~\ref{tab:first_level-frdp}.:
 \begin{table}
   \center
   \caption{First level FR-DP mapping.~\cite{gerhard2016suretrack}}\label{tab:first_level-frdp}
@@ -31,28 +55,31 @@ Now decompose these functions further to generate Table~\ref{tab:first_level-frd
     \bottomrule
   \end{tabular}
 \end{table}
-Design Decomposition diagram goes here and explanation of what the arrows tell us.
+Update the Design Decomposition diagram and analyze the arrows.
 
 From this diagram, chunk pieces together to make modules.
 Explain what those modules are and what they do.
 
 Put Incidental Interaction graph and related discussion
 
-\section{\FR1 do something interesting}
+
+\subsection{\FR1 do something interesting}
 For each requirement, explain with calculations and data how the related DP will meet the requirement..
 This means each FR needs to have an associated test or tests (which will be checked in the Analysis chapter) and each DP needs to have a target metric which should be quantitative.
 Put equations, data, sketches, drawings, CAD, and electrical schematics.
 
-\section{\FR2 do something else}
+\subsection{\FR2 do something else}
 For each requirement, explain with calculations and data how the related DP will meet the requirement..
 This means each FR needs to have an associated test or tests (which will be checked in the Analysis chapter) and each DP needs to have a target metric which should be quantitative.
 Put equations, data, sketches, drawings, CAD, and electrical schematics.
 
 
-\section{\FR3 do something different}
+\subsection{\FR3 do something different}
 For each requirement, explain with calculations and data how the related DP will meet the requirement..
 This means each FR needs to have an associated test or tests (which will be checked in the Analysis chapter) and each DP needs to have a target metric which should be quantitative.
 Put equations, data, sketches, drawings, CAD, and electrical schematics.
+
+
 
 \section{Summary}
 Summarize the chapter and place a schematic of how all the modules fit together.
